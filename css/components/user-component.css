@@ -10,6 +10,9 @@
 }
 .user-component__column:last-child {
   color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 .user-component__avatar {
   width: 70px;
@@ -33,7 +36,11 @@
   font-weight: 400;
 }
 .user-component__subtitle {
-  font-size: 17px;
+  font-size: 15px;
   margin-top: 8px;
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(0, 0, 0, 0.5);
+}
+.user-component__time {
+  display: block;
+  margin-bottom: 10px;
 }

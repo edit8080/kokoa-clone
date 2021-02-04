@@ -16,25 +16,18 @@
   color: #2f363e;
   position: relative;
 }
-.nav__notification,
-.nav__newdot {
-  background-color: tomato;
-  border-radius: 50%;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-weight: 600;
-  position: absolute;
-}
 .nav__notification {
-  width: 25px;
-  height: 25px;
+  position: absolute;
   left: 18px;
   bottom: 18px;
 }
 .nav__newdot {
+  background-color: tomato;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
   width: 8px;
   height: 8px;
   left: 30px;
