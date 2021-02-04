@@ -22,14 +22,6 @@
   bottom: 18px;
 }
 .nav__newdot {
-  background-color: tomato;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  width: 8px;
-  height: 8px;
   left: 30px;
   bottom: 30px;
 }
