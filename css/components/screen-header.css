@@ -14,3 +14,7 @@
   margin-left: 15px;
   position: relative;
 }
+.screen-header__newdot {
+  left: 8px;
+  bottom: 25px;
+}
