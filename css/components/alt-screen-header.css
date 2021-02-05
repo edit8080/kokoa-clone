@@ -1,0 +1,12 @@
+.alt-screen-header {
+  margin-top: 30px;
+  padding: var(--horizontal-space);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+.alt-screen-header__title {
+  font-size: 24px;
+  font-weight: 600;
+}
