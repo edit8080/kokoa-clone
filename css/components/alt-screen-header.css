@@ -1,5 +1,5 @@
 .alt-screen-header {
-  margin-top: 30px;
+  margin-top: 25px;
   padding: var(--horizontal-space);
   display: flex;
   justify-content: space-between;
@@ -12,6 +12,9 @@
 }
 .alt-screen-header__column {
   width: 33%;
+}
+.alt-screen-header__column:nth-child(2) {
+  text-align: center;
 }
 .alt-screen-header__column:last-child {
   display: flex;
