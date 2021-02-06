@@ -11,6 +11,8 @@
 @import 'components/badge.css';
 @import 'components/icon-row.css';
 @import 'components/alt-screen-header.css';
+@import 'components/new-component.css';
+@import 'components/no-mobile.css';
 
 /* Screens */
 @import 'screens/login.css';
@@ -26,28 +28,4 @@ body {
 }
 .main-screen {
   padding: 0px var(--horizontal-space);
-}
-.newdot {
-  background-color: tomato;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  width: 8px;
-  height: 8px;
-}
-.newIcon {
-  background-color: tomato;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-}
-.newIcon > span {
-  color: white;
-  font-size: 10px;
-  font-weight: 600;
 }

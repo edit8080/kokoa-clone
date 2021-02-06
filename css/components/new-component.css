@@ -1,0 +1,24 @@
+.newdot {
+  background-color: tomato;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+}
+.newIcon {
+  background-color: tomato;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+.newIcon > span {
+  color: white;
+  font-size: 10px;
+  font-weight: 600;
+}
