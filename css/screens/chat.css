@@ -9,11 +9,22 @@
   width: 100%;
   background-color: #abc1d1;
 }
+@keyframes fadeIn {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
 .main-chat {
   display: flex;
   margin-top: 120px;
   flex-direction: column;
   align-items: center;
+  animation: fadeIn 1s linear;
 }
 .chats__timestamp {
   background-color: #92a4b2;
@@ -75,12 +86,12 @@
   align-items: center;
   padding: 5px 15px;
   box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
 }
 .reply .reply__column:first-child {
   margin-left: 1%;
   margin-right: 4%;
 }
-
 .reply .reply__column:last-child {
   display: flex;
   justify-content: space-between;
@@ -89,6 +100,8 @@
   border: var(--main-border);
   border-radius: 20px;
   z-index: 10;
+  background-color: white;
+  will-change: transform;
 }
 .reply .reply__column:first-child {
   font-size: 24px;
@@ -118,4 +131,24 @@
   justify-content: center;
   align-items: center;
   margin-right: 5px;
+}
+.reply:focus-within {
+  transform: translateY(80px);
+}
+.reply:focus-within .reply__column:first-child,
+.reply:focus-within .fa-smile {
+  visibility: hidden;
+  opacity: 0;
+}
+.reply:focus-within .reply__column:last-child {
+  transform: translateX(-11%) translateY(-100px);
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+.reply:focus-within input {
+  width: 95vw;
+}
+.reply .reply__column:first-child,
+.reply .fa-smile {
+  transition: opacity 0.3s ease-in-out;
 }
